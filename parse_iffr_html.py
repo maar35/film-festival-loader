@@ -11,9 +11,9 @@ version_number = "0.1"
 
 # Globals.
 
-documents_dir = os.path.expanduser("~/Documents")
-html_input_dir = os.path.join(documents_dir, "Python/_iffr/_iffr2019")
-data_dir = os.path.join(documents_dir, "Film/IFFR/IFFR2019/film_festival_loader")
+project_dir = os.path.expanduser("~/Documents/Film/IFFR/IFFR2019")
+html_input_dir = os.path.join(project_dir, "_website_data")
+data_dir = os.path.join(project_dir, "_planner_data")
 screenfile = os.path.join(data_dir, "screens.csv")
 filmsfile = os.path.join(data_dir, "films.csv")
 ucodefile = os.path.join(data_dir, "unicodemap.txt")
