@@ -1,7 +1,11 @@
 #!/bin/bash
 
-declare -r films_dir=_iffr/_iffr2019
+declare -r project_dir="$HOME/Documents/Film/IFFR/IFFR2019"
+declare -r films_dir=$project_dir/_website_data
 declare -r url_dir="https://iffr.com/nl/programma/2019"
+
+ls -l $films_dir
+exit
 
 declare url_pages="a-z"
 declare page_count=21
