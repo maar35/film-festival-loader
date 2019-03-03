@@ -2,8 +2,9 @@
 
 declare -r command=$(basename $0)
 declare -r error_log=${command}.err
-declare -r filmurl_file="/Users/maarten/Documents/Maarten's documenten/Film/IFFR/IFFR2019/Screenings Plan/filmurls.txt"
-declare -r films_dir=_iffr/_iffr2019
+declare -r project_dir="$HOME/Documents/Film/IFFR/IFFR2019"
+declare -r filmurl_file="$project_dir/_planner_data/filmurls.txt"
+declare -r films_dir=$project_dir/_website_data
 
 declare html_file
 declare stat

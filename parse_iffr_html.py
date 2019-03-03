@@ -11,13 +11,14 @@ version_number = "0.1"
 
 # Globals.
 
-html_input_dir = "/Users/maarten/Documents/Python/_iffr/_iffr2019"
-iffrprjdir = "/Users/maarten/Documents/Maarten's documenten/Film/IFFR/IFFR2019/Screenings Plan"
-screenfile = os.path.join(iffrprjdir, "screens.csv")
-filmsfile = os.path.join(iffrprjdir, "films.csv")
-ucodefile = os.path.join(iffrprjdir, "unicodemap.txt")
-filmurlfile = os.path.join(iffrprjdir, "filmurls.txt")
-screeningsfile = os.path.join(iffrprjdir, "screenings.csv")
+project_dir = os.path.expanduser("~/Documents/Film/IFFR/IFFR2019")
+html_input_dir = os.path.join(project_dir, "_website_data")
+data_dir = os.path.join(project_dir, "_planner_data")
+screenfile = os.path.join(data_dir, "screens.csv")
+filmsfile = os.path.join(data_dir, "films.csv")
+ucodefile = os.path.join(data_dir, "unicodemap.txt")
+filmurlfile = os.path.join(data_dir, "filmurls.txt")
+screeningsfile = os.path.join(data_dir, "screenings.csv")
 
 # Glyphs.
 
