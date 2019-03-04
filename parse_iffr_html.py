@@ -80,17 +80,14 @@ class Screen():
         self.name = name
         self.abbr = abbr
 
-    def _key(self):
-        return self.name
-
     def __repr__(self):
         return self.abbr
 
+    def _key(self):
+        return self.name
+
     def screen_repr_csv(self):
-        text = ";".join([
-            self.name,
-            self.abbr
-        ])
+        text = ";".join([self.name, self.abbr])
         return "{}\n".format(text)
 
 class Film:
@@ -255,7 +252,7 @@ class IffrData:
         f = open(screenfile, "r")
         screens = [Screen(self.splitrec(line, ";")) for line in f]
         f.close()
-        self.screens = dict([(t._key(), t) for t in screens])
+        self.screens = dict([(screen._key(), screen) for screen in screens])
 
     def write_screens(self):
         f = open(screenfile, "w")
